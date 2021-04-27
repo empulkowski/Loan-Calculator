@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+
+</head>
+
+
+
+<!--styles for loan calc-->
+<style>
+h1 {
+    color: darkolivegreen;
+}
+body {
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+#salary, #credit, #monthsAtJob {
+    margin-top: 20px;
+}
+#monthsAtJob {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    padding: 10px 10px 10px 10px;
+}
+
+.container {
+    padding-left: 100px;
+    border: darkolivegreen solid 2px;
+    border-radius: 20px;
+}
+
+</style>
+<!--close styles for loan calc-->
+
+
+
+
+<body>
+<div class="container">
+<h1>Loan Calculator</h1>
+
+<label for="salary">Salary</label>
+<input type="text" id="salary"  min="0">
+<br>
+
+<label for="credit">Credit Score</label>
+<input type="text" id="credit">
+<br>
+
+<label for="monthsAtJob">Months at Job</label>
+<input type="text" id="monthsAtJob"  min="1">
+<br>
+
+
+<button id="calculate"> Calculate </button>
+<p id="output"></p>
+</div>
+</body>
+</html>
+
+
